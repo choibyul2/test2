@@ -32,7 +32,7 @@ import com.kosa.starrydonuts.domain.NoticeDTO;
 import com.kosa.starrydonuts.service.BoardService;
 import com.kosa.starrydonuts.service.CommentService;
 
-
+// ì£¼ì„ í…ŒìŠ¤íŠ¸
 @Controller
 public class BoardController {
 	
@@ -45,9 +45,9 @@ public class BoardController {
 	private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
 
 	
-//	°Ô½ÃÆÇ ¸ñ·Ï =====================================================================================
+//	ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ =====================================================================================
 	
-	// 1. °Ô½ÃÆÇ ÀüÃ¼ ¸ñ·Ï ÆäÀÌÁö
+	// 1. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //	public String list(HttpServletRequest req, HttpServletResponse res) throws Exception {
 //    	System.out.println("board.controller.list() invoked.");
 //
@@ -61,7 +61,7 @@ public class BoardController {
 //		
 //	} // list
 	
-	// 1. °Ô½ÃÆÇ ÀüÃ¼ ¸ñ·Ï ÆäÀÌÁö[´õº¸±â]
+	// 1. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]
 //	@RequestMapping("/board/list.do")
 //	public String list(BoardDTO board, Model model) throws Exception {
 //    	System.out.println("board.controller.list() invoked.");
@@ -77,7 +77,7 @@ public class BoardController {
 //	} // list
 	
 	
-	// 2. [ÆäÀÌÂ¡]°Ô½ÃÆÇ ÀüÃ¼ ¸ñ·Ï ÆäÀÌÁö
+	// 2. [ï¿½ï¿½ï¿½ï¿½Â¡]ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	@RequestMapping("/board/list2.do")
 	public String list2(BoardDTO board, HttpServletRequest req, HttpServletResponse res, String searchTitle) throws Exception {
     	System.out.println("notice.controller.list2() invoked.");
@@ -91,7 +91,7 @@ public class BoardController {
 	}
 	
 	
-	// 1-2. °Ô½ÃÆÇ ÀüÃ¼ ¸ñ·Ï ÆäÀÌÁö [ajax·Î ´õº¸±â Ãâ·Â]
+	// 1-2. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [ajaxï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½]
 //	@ResponseBody
 //	@RequestMapping(value="/board/ajaxList.do", method = RequestMethod.POST)
 //	public Map<String, Object> ajaxList(@RequestBody BoardDTO board, HttpServletRequest req, HttpServletResponse res) throws Exception {
@@ -104,7 +104,7 @@ public class BoardController {
 //        	result.put("list", boardList);
 //        } catch (Exception e) { 
 //        	result.put("status", false);
-//        	result.put("message", "¼­¹ö¿¡ ¿À·ù ¹ß»ı");
+//        	result.put("message", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½");
 //        	e.printStackTrace();
 //        }
 //		System.out.println(result);
@@ -114,9 +114,9 @@ public class BoardController {
 	
 
 	
-//	°Ô½ÃÆÇ »ó¼¼ =====================================================================================
+//	ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ =====================================================================================
 	
-	// 2. °Ô½ÃÆÇ »ó¼¼ ÆäÀÌÁö
+	// 2. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	@ResponseBody
 	@RequestMapping(value="/board/detail.do", method = RequestMethod.POST)
 	public Map<String, Object> detail(@RequestBody BoardDTO board,  Model model) throws Exception {
@@ -145,7 +145,7 @@ public class BoardController {
 //			model.addAttribute("board", boardView);
 //        } catch (Exception e) { 
 //        	model.addAttribute("status", false);
-//        	model.addAttribute("message", "¼­¹ö¿¡ ¿À·ù ¹ß»ı");
+//        	model.addAttribute("message", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½");
 //        	e.printStackTrace();
 //        }
 //
@@ -153,7 +153,7 @@ public class BoardController {
 //	} // detail
 	
 	
-	// 2. °Ô½ÃÆÇ »ó¼¼ ÆäÀÌÁö
+	// 2. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //	@RequestMapping(value="/board/reply.do", method = RequestMethod.POST)
 //	public String replyForm(BoardDTO board, Model model) throws Exception {
 //		System.out.println("board.controller.detail() invoked.");
@@ -166,7 +166,7 @@ public class BoardController {
 //			model.addAttribute("board", boardView);
 //        } catch (Exception e) { 
 //        	model.addAttribute("status", false);
-//        	model.addAttribute("message", "¼­¹ö¿¡ ¿À·ù ¹ß»ı");
+//        	model.addAttribute("message", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½");
 //        	e.printStackTrace();
 //        }
 //
@@ -200,7 +200,7 @@ public class BoardController {
 //			service.reply(board);
 //        } catch (Exception e) { 
 //        	model.addAttribute("status", false);
-//        	model.addAttribute("message", "¼­¹ö¿¡ ¿À·ù ¹ß»ı");
+//        	model.addAttribute("message", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½");
 //        	e.printStackTrace();
 //        }
 //
@@ -208,7 +208,7 @@ public class BoardController {
 //	} // detail
 	
 	
-	// 4. È¸¿ø°Ô½ÃÆÇ ´ä±Û µî·Ï
+	// 4. È¸ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	@ResponseBody
 	@RequestMapping(value="/board/reply.do", method = RequestMethod.POST)
 	public String reply(@RequestBody BoardDTO board, HttpServletRequest req, HttpServletResponse res) throws Exception {
@@ -217,14 +217,14 @@ public class BoardController {
     	JSONObject result = new JSONObject();
     	int status = service.reply(board);
 
-    	System.out.println("È¸¿ø°Ô½ÃÆÇ ´ä±Û ¼º°ø¿©ºÎ : " + status);
+    	System.out.println("È¸ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + status);
     	
     	if(status == 1) {
     		result.put("status", true);
-    		result.put("message", "È¸¿ø°Ô½ÃÆÇ ´ä±ÛÀÌ µî·ÏµÇ¾ú½À´Ï´Ù.");
+    		result.put("message", "È¸ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ÏµÇ¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
     	} else {
     		result.put("status", false);
-    		result.put("message", "È¸¿ø°Ô½ÃÆÇ ´ä±ÛÀÌ µî·ÏµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
+    		result.put("message", "È¸ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½Ê¾Ò½ï¿½ï¿½Ï´ï¿½.");
     	}
 
     	System.out.println(result.toString());
@@ -251,8 +251,8 @@ public class BoardController {
 
 			String fileNameReal = UUID.randomUUID().toString();
 			
-			//ÆÄÀÏ ÀúÀå 
-			mFile.transferTo(new File(file, fileNameReal)); //ÀÓ½Ã·Î ÀúÀåµÈ multipartFileÀ» ½ÇÁ¦ ÆÄÀÏ·Î Àü¼Û
+			//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+			mFile.transferTo(new File(file, fileNameReal)); //ï¿½Ó½Ã·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ multipartFileï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 			fileList.add(
 					AttacheFileDTO.builder()
@@ -266,9 +266,9 @@ public class BoardController {
 		return fileList;
 	}	
 	
-//	°Ô½ÃÆÇ ±Û¾²±â =====================================================================================
+//	ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ =====================================================================================
 
-	// 3-1. °Ô½ÃÆÇ ±Û¾²±â ÆäÀÌÁö
+	// 3-1. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	/*
 	 * public String insertForm(HttpServletRequest req, HttpServletResponse res)
 	 * throws Exception {
@@ -279,7 +279,7 @@ public class BoardController {
 	 * } // insertForm
 	 */	
 	
-	// 3-2. °Ô½ÃÆÇ ±Û¾²±â
+	// 3-2. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½
 	@ResponseBody
 	@RequestMapping(value="/board/insert.do", method = RequestMethod.POST)
 	public String insert(BoardDTO board, HttpServletRequest req, HttpServletResponse res) throws Exception {
@@ -288,16 +288,16 @@ public class BoardController {
 		boolean status = service.boardInsert(board);
 		
 		jsonResult.put("status", status);
-		jsonResult.put("message", status ? "±ÛÀÌ µî·ÏµÇ¾ú½À´Ï´Ù" : "¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù. ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.");
+		jsonResult.put("message", status ? "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ÏµÇ¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½" : "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 		
 		return jsonResult.toString();
 	
 	} // insert
 
 	
-//	°Ô½ÃÆÇ ±Û »èÁ¦ =====================================================================================
+//	ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ =====================================================================================
 
-	// 4-1. °Ô½ÃÆÇ ±Û »èÁ¦
+	// 4-1. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	@ResponseBody
 	@RequestMapping(value="/board/delete.do", method = RequestMethod.POST)
 	public String delete(BoardDTO board, HttpServletRequest req, HttpServletResponse res) throws Exception {
@@ -306,30 +306,30 @@ public class BoardController {
 		boolean status = service.boardDelete(board);
 		
 		jsonResult.put("status", status);
-		jsonResult.put("message", status ? "±ÛÀÌ »èÁ¦µÇ¾ú½À´Ï´Ù" : "¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù. ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.");
+		jsonResult.put("message", status ? "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½" : "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 		
 		return jsonResult.toString();
 		
 	} // delete
 	
 	
-	// 4-2. Ã¼Å©¹Ú½º ±Û »èÁ¦
+	// 4-2. Ã¼Å©ï¿½Ú½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public String deleteBoards(String[] boardids, HttpServletRequest req, HttpServletResponse res) throws Exception {
 		System.out.println("board.controller.deleteBoards() invoked.");
 		JSONObject jsonResult = new JSONObject();
 		boolean status = service.boardsDelete(boardids);
 		
 		jsonResult.put("status", status);
-		jsonResult.put("message", status ? "±ÛÀÌ »èÁ¦µÇ¾ú½À´Ï´Ù" : "¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù. ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.");
+		jsonResult.put("message", status ? "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½" : "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 		
 		return jsonResult.toString();
 	
 	}
 
 	
-//	°Ô½ÃÆÇ ±Û ¼öÁ¤ =====================================================================================
+//	ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ =====================================================================================
 	
-	// 5. °Ô½ÃÆÇ ±Û ¼öÁ¤ ÆäÀÌÁö
+	// 5. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	/*
 	 * public String updateForm(BoardDTO board, HttpServletRequest req,
 	 * HttpServletResponse res) throws Exception {
@@ -340,7 +340,7 @@ public class BoardController {
 	 * } // updateForm
 	 */	
 	
-	// 5-1. °Ô½ÃÆÇ ±Û ¼öÁ¤
+	// 5-1. ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
 	public String update(BoardDTO board, HttpServletRequest req, HttpServletResponse res) throws Exception {
 		System.out.println("board.controller.update() invoked.");
@@ -349,7 +349,7 @@ public class BoardController {
 		boolean status = service.boardUpdate(board);
 		
 		jsonResult.put("status", status);
-		jsonResult.put("message", status ? "±ÛÀÌ ¼öÁ¤µÇ¾ú½À´Ï´Ù." : "¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù. ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.");
+		jsonResult.put("message", status ? "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½." : "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 		
 		return jsonResult.toString();
 		
