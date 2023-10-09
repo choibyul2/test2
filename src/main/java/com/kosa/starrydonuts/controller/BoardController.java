@@ -33,6 +33,7 @@ import com.kosa.starrydonuts.service.BoardService;
 import com.kosa.starrydonuts.service.CommentService;
 
 // 주석 테스트
+// 주석 테스트 2번
 @Controller
 public class BoardController {
 	
